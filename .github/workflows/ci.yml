@@ -26,3 +26,11 @@ jobs:
 
     - name: Ejecutar Pruebas Unitarias
       run: mvn test
+
+    - name: Publicar Reporte Navegable de Pruebas
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: reporte-junit-surefire
+        path: target/surefire-reports/
+
