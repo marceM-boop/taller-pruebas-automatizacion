@@ -1,7 +1,7 @@
 package cl.iplacex.automatizacion;
 
 public class Calculadora {
-
+    
     public int sumar(int a, int b) {
         return a + b;
     }
@@ -10,3 +10,4 @@ public class Calculadora {
         return a - b;
     }
 }
+
